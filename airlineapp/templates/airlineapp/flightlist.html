@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %} {{ title}} {% endblock title %}
+
+{%block content %}
+
+<table class="table" style="table-layout:fixed">
+<thead class="thead-light">
+<tr>
+<th> Flight Number</th>
+<th> Departure Time </th>
+<th> Departure Airport </th>
+<th> Arival Airport  </th>
+<th> Arival Time Code </th>
+<th> Date </th>
+<th> Price </th>
+<th> Book Flight</th>
+
+</tr>
+</thead>
+
+<tbody>
+{% for onelist in flightlist %}
+<tr>
+ <td>{{onelist.flightnum }}</td>
+ <td>{{onelist.departuretime}} </td>
+ <td>{{onelist.origindest}} </td>
+ <td>{{onelist.arrivaldest}}</td>
+ <td>{{onelist.arrivaltime}}</td>
+ <td>{{onelist.date }}</td>
+ <td>{{onelist.cost }}</td>
+
+
+ <td> <a class="btn btn-primary" href="/get_ticket/{{onelist.flightnum}}" role="button">Get Ticket </a></td>
+ <!--<td> <a class="btn btn-primary" href="/property/{{onelist.propertyid}}/update/" role="button">Edit </a></td>-->
+ </tr>
+
+ {% endfor %}
+</tbody>
+ </table>
+ {% endblock %}

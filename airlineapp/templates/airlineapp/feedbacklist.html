@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %} {{ title}} {% endblock title %}
+
+{%block content %}
+
+<table class="table" style="table-layout:fixed">
+<thead class="thead-light">
+<tr>
+
+
+<th> Reservation ID </th>
+<th> Notes</th>
+<th> Rating </th>
+<th> Feedback ID</th>
+<th> Edit</th>
+
+
+</tr>
+</thead>
+
+<tbody>
+{% for onelist in feedbacklist %}
+<tr>
+ <td>{{onelist.feedbackid}} </td>
+ <td>{{onelist.note}} </td>
+ <td>{{onelist.rating}} </td>
+ <td>{{onelist.reservationid }}</td>
+
+
+
+
+ <td> <a class="btn btn-secondary" href="/feedback/{{onelist.flightnum}}" role="button" >Edit</a></td>
+ <!--<td> <a class="btn btn-primary" href="/property/{{onelist.propertyid}}/update/" role="button">Edit </a></td>-->
+ </tr>
+
+ {% endfor %}
+</tbody>
+ </table>
+ {% endblock %}

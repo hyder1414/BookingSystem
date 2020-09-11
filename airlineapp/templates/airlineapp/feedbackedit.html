@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %} {{ title}} {% endblock title %}
+
+<h1> {{title}} </h1>
+{% if submitted %}
+<p class= "success">
+    Feedback successfully modified. Thank you!
+
+</p>
+{% else %}
+<form action="" method="post" nonvalidate>
+    <table>
+        {{form.as_table}}
+        <tr>
+            <td>&nbsp;</td>
+            <td>
+            <input type="submit" value="submit" class="btn btn-primary">Submit
+            </td>
+        </tr>
+    </table>
+    {% csrf_token %}
+</form>
+ {% endif %}
+ {% endblock content %}

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}
+<h1 style="text-align:center">
+{{ title}}
+</h1>
+<br>
+{% endblock title %}
+{%block content %}
+<p >
+<h5 style="text-align:center">SouthWest Airline Journey on Clouds</h5>
+<br>
+{% load static %}
+   <!--<img src="{% static "airlineapp/images/plane.jpg" %}" class="mx-auto d-block" alt="my image" />-->
+   <img class="mx-auto d-block" src="https://millionmilesecrets.com/wp-content/uploads/shutterstock_643378981-1.jpg" alt="my image" width="100%" height="867" srcset="https://millionmilesecrets.com/wp-content/uploads/shutterstock_643378981-1.jpg 1000w, https://millionmilesecrets.com/wp-content/uploads/shutterstock_643378981-1-300x200.jpg 300w, https://millionmilesecrets.com/wp-content/uploads/shutterstock_643378981-1-768x512.jpg 768w, https://millionmilesecrets.com/wp-content/uploads/shutterstock_643378981-1-600x400.jpg 600w, https://millionmilesecrets.com/wp-content/uploads/shutterstock_643378981-1-800x534.jpg 800w" data-lazy-loaded="1" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" style="
+    width: 1440px;
+">
+<!-- </p>-->
+{% endblock content %}
+

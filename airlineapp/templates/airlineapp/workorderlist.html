@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %} {{ title}} {% endblock title %}
+
+{%block content %}
+
+<table class="table" style="table-layout:fixed">
+<thead class="thead-light">
+<tr>
+<th> Airport ID</th>
+<th> Address </th>
+<th> Service </th>
+
+</tr>
+</thead>
+
+<tbody>
+{% for onelist in workorderlist%}
+
+<tr>
+ <td>{{onelist.airportid }}</td>
+ <td>{{onelist.address}} </td>
+ <td>{{onelist.lastservicedate}} </td>
+
+
+
+ <!--<td> <a class="btn btn-primary" href="/get_ticket/{{onelist.flightnum}}" role="button">Get Ticket </a></td>-->
+ <!--<td> <a class="btn btn-primary" href="/property/{{onelist.propertyid}}/update/" role="button">Edit </a></td>-->
+ </tr>
+
+ {% endfor %}
+ <div>
+
+ </div>
+</tbody>
+ </table>
+ {% endblock %}

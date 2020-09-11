@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %} {{ title}} {% endblock title %}
+
+{%block content %}
+
+<table class="table" style="table-layout:fixed">
+<thead class="thead-light">
+<tr>
+<th> Reservation ID</th>
+<th> Reservation Date </th>
+<th> Customer ID </th>
+<th> Change Reservation </th>
+
+</tr>
+</thead>
+
+<tbody>
+{% for onelist in reservationlist %}
+<tr>
+ <td>{{onelist.reservationid }}</td>
+ <td>{{onelist.reservationdate}} </td>
+ <td>{{onelist.customerid}} </td>
+
+
+
+ <td> <a class="btn btn-primary" href="/get_ticket/{{onelist.flightnum}}" role="button">Edit</a></td>
+ <!--<td> <a class="btn btn-primary" href="/property/{{onelist.propertyid}}/update/" role="button">Edit </a></td>-->
+ </tr>
+
+ {% endfor %}
+</tbody>
+ </table>
+ {% endblock %}
