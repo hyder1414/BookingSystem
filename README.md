@@ -1,3 +1,4 @@
+![Alt Text](https://media.giphy.com/media/mCJkH5qhf3XQ7upmF6/giphy.gif)
 
   ## Executive Summary
   ##  Introduction
