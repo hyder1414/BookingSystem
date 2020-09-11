@@ -15,7 +15,7 @@ The current Southwest Airlines website does not have an option for travelers goi
 <img width="939" alt="Screen Shot 2020-09-11 at 1 46 04 PM" src="https://user-images.githubusercontent.com/34618387/92963340-e4f71c80-f437-11ea-9a81-47cab0264769.png">
 <img width="910" alt="Screen Shot 2020-09-11 at 1 45 57 PM" src="https://user-images.githubusercontent.com/34618387/92963343-e6284980-f437-11ea-8b17-a339a09d9952.png">
   
-<img width="993" alt="Screen Shot 2020-09-11 at 1 47 42 PM" src="https://user-images.githubusercontent.com/34618387/92962437-8e3d1300-f436-11ea-98a1-8cafe54b785b.png">
+
 
   ##  Database Design
   ##  UI Design
