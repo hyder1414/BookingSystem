@@ -1,10 +1,14 @@
 ![Alt Text](https://media.giphy.com/media/mCJkH5qhf3XQ7upmF6/giphy.gif)
 
  
-Replicate south airline webapplication as much as posible under full SDLC paradigm (system analysis, system design, data base design, coded and deployed on heroku). Integrate some enhancement; 1. Multiple desination reservation 2. 
+Class project spring 2019
+Team: Haider Khan, Soomin Chae, Jessica Hein, Adam Clark
 
+Replicate the Southern Airlines web application for the class project.  First, we conduct "System Analysis" for the web application and proposed possible enhancements for the current web application. (1) multiple reservation options. (2) Quick customer satisfaction feedback. (3) Integrate hub and spoke system network. (4) Provide Voucher/Discounts for international connecting flights.
 
-Customers must make individual reservations for each flight. We believe that resolving this issue will improve the quality of Southwest Airlines service. Also, Southwest Airlines does not have a system to receive direct customer feedback. There might be some suggestions and recommendations from customers however, the company does not have any system to gather this information. Our team believes that implementing this system will help the marketing team advertise Southwest and improve the quality of the service. This will also give Southwest Airlines the reputation of frequent flyer interaction and their motivation to improve their service. 
+Second, we performed a "System Design" for the current web application to implement the recommendation made during the System Analysis stage. We also designed a DataBase System and created dummy data with MySQL.
+
+Finally, we developed a replicate of the current web application using Bootstrap, Django, and deployed it to Heroku. 
   ##  Systems Analysis Updates
   #### Function Model 
   <img width="780" alt="Screen Shot 2020-09-11 at 1 45 45 PM" src="https://user-images.githubusercontent.com/34618387/92963345-e6c0e000-f437-11ea-9679-2100749193f7.png">
